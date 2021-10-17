@@ -3,4 +3,5 @@
     <string name="game">Game</string>
     <string name="players">Players</string>
     <string name="play_button">Play Button</string>
+    <string name="player_name">Player Name</string>
 </resources>
