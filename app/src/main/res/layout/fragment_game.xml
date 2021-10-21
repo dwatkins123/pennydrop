@@ -9,6 +9,70 @@
         android:animateLayoutChanges="true"
         tools:context="com.wwzard.pennydrop.fragments.GameFragment">
 
+        <LinearLayout
+            android:id="@+id/layoutCoinSlots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <include
+                android:id="@+id/coinSlot1"
+                layout="@layout/layout_coin_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:slotNum="@{1}" />
+
+            <include
+                android:id="@+id/coinSlot2"
+                layout="@layout/layout_coin_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:slotNum="@{2}" />
+
+            <include
+                android:id="@+id/coinSlot3"
+                layout="@layout/layout_coin_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:slotNum="@{3}" />
+
+            <include
+                android:id="@+id/coinSlot4"
+                layout="@layout/layout_coin_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:slotNum="@{4}" />
+
+            <include
+                android:id="@+id/coinSlot5"
+                layout="@layout/layout_coin_slot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:slotNum="@{5}" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/coinSlot6"
+            layout="@layout/layout_coin_slot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutCoinSlots"
+            app:slotNum="@{6}"/>
+
         <TextView
             android:id="@+id/textCurrentPlayerName"
             android:layout_width="0dp"
@@ -30,7 +94,7 @@
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="@id/textCoinsLeft"
             app:layout_constraintStart_toStartOf="@id/textCoinsLeft"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coinSlot6"
             tools:text="10" />
 
         <TextView
