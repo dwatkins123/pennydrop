@@ -77,5 +77,33 @@
                 android:padding="10dp"
                 android:text="@string/pass" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textCurrentTurnInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:scrollbars="vertical"
+            android:text="This will contain info about the game."
+            app:layout_constraintBottom_toTopOf="@id/textCurrentStandingsInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutButtons"
+            tools:text="Michael rolled a 4.\nMichael rolled a 6!" />
+
+        <TextView
+            android:id="@+id/textCurrentStandingsInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="This will contain the Game's current standings."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textCurrentTurnInfo"
+            tools:text="Current Scores:\tHazel: 4 coins\nMichael: 7 coins" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
